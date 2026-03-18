@@ -5,10 +5,10 @@
 #                                                      :::      ::::::::    #
 #  elements.py                                       :+:      :+:    :+:    #
 #                                                  +:+ +:+         +:+      #
-#  By: cehenrot <cehenrot@student.42.fr>         +#+  +:+       +#+         #
+#  By: cehenrot <cehenrot@student.42lyon.fr>     +#+  +:+       +#+         #
 #                                              +#+#+#+#+#+   +#+            #
 #  Created: 2026/03/18 10:29:18 by cehenrot        #+#    #+#               #
-#  Updated: 2026/03/18 13:25:43 by cehenrot        ###   ########.fr        #
+#  Updated: 2026/03/18 18:32:43 by cehenrot        ###   ########.fr        #
 #                                                                           #
 # ************************************************************************* #
 
@@ -23,7 +23,7 @@ def create_water() -> str:
     return (f"{w} element created")
 
 
-def create_eart() -> str:
+def create_earth() -> str:
     e = 'Eart'
     return (f"{e} element created")
 
