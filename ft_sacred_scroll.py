@@ -8,7 +8,11 @@
 #  By: cehenrot <cehenrot@student.42lyon.fr>     +#+  +:+       +#+         #
 #                                              +#+#+#+#+#+   +#+            #
 #  Created: 2026/03/18 12:53:04 by cehenrot        #+#    #+#               #
+<<<<<<< HEAD
 #  Updated: 2026/03/18 18:36:11 by cehenrot        ###   ########.fr        #
+=======
+#  Updated: 2026/03/18 15:20:13 by cehenrot        ###   ########.fr        #
+>>>>>>> 59a0093 (creations des 2 premier exemple du sujet sur les elements)
 #                                                                           #
 # ************************************************************************* #
 
@@ -32,7 +36,7 @@ def main() -> None:
         try:
             print(f"alchemy.{i}(): {getattr(alchemy, i)()}")
         except AttributeError:
-            print("AttributeError - not exposed")
+            print(f"alchemy.{i}: AttributeError - not exposed")
 
     print("\nPackage metadata")
     print(f"Version: {alchemy.__version__}")
