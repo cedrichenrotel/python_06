@@ -8,7 +8,7 @@
 #  By: cehenrot <cehenrot@student.42lyon.fr>     +#+  +:+       +#+         #
 #                                              +#+#+#+#+#+   +#+            #
 #  Created: 2026/03/18 10:30:41 by cehenrot        #+#    #+#               #
-#  Updated: 2026/03/19 17:34:03 by cehenrot        ###   ########.fr        #
+#  Updated: 2026/03/19 17:53:39 by cehenrot        ###   ########.fr        #
 #                                                                           #
 # ************************************************************************* #
 
@@ -31,10 +31,10 @@ def strength_potion() -> str:
 
 
 def invisibility_potion() -> str:
-    return (f"Invisibility potion brewed with {create_air} and "
-            f"{create_water}")
+    return (f"Invisibility potion brewed with {create_air()} and "
+            f"{create_water()}")
 
 
 def wisdom_potion() -> str:
-    return (f"Wisdom potion brewed with all elements: {create_fire}, "
-            f"{create_water}, {create_earth}, {create_air}")
+    return (f"Wisdom potion brewed with all elements: {create_fire()}, "
+            f"{create_water()}, {create_earth()}, {create_air()}")
