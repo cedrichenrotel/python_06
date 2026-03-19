@@ -5,14 +5,10 @@
 #                                                      :::      ::::::::    #
 #  ft_sacred_scroll.py                               :+:      :+:    :+:    #
 #                                                  +:+ +:+         +:+      #
-#  By: cehenrot <cehenrot@student.42lyon.fr>     +#+  +:+       +#+         #
+#  By: cehenrot <cehenrot@student.42.fr>         +#+  +:+       +#+         #
 #                                              +#+#+#+#+#+   +#+            #
-#  Created: 2026/03/18 12:53:04 by cehenrot        #+#    #+#               #
-<<<<<<< HEAD
-#  Updated: 2026/03/18 18:36:11 by cehenrot        ###   ########.fr        #
-=======
-#  Updated: 2026/03/18 15:20:13 by cehenrot        ###   ########.fr        #
->>>>>>> 59a0093 (creations des 2 premier exemple du sujet sur les elements)
+#  Created: 2026/03/19 07:21:44 by cehenrot        #+#    #+#               #
+#  Updated: 2026/03/19 07:21:49 by cehenrot        ###   ########.fr        #
 #                                                                           #
 # ************************************************************************* #
 

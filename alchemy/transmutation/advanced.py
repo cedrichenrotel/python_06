@@ -3,16 +3,23 @@
 # ************************************************************************* #
 #                                                                           #
 #                                                      :::      ::::::::    #
-#  __init__.py                                       :+:      :+:    :+:    #
+#  advanced.py                                       :+:      :+:    :+:    #
 #                                                  +:+ +:+         +:+      #
 #  By: cehenrot <cehenrot@student.42.fr>         +#+  +:+       +#+         #
 #                                              +#+#+#+#+#+   +#+            #
-#  Created: 2026/03/18 10:42:11 by cehenrot        #+#    #+#               #
-#  Updated: 2026/03/19 11:26:35 by cehenrot        ###   ########.fr        #
+#  Created: 2026/03/19 10:03:15 by cehenrot        #+#    #+#               #
+#  Updated: 2026/03/19 11:10:05 by cehenrot        ###   ########.fr        #
 #                                                                           #
 # ************************************************************************* #
 
-from .basic import lead_to_gold, stone_to_gem
-from .advanced import philosophers_stone, elixir_of_life
+from .basic import lead_to_gold
+from ..potions import healing_potion
 
-__all__ = [lead_to_gold, stone_to_gem, philosophers_stone, elixir_of_life]
+
+def philosophers_stone() -> str:
+    return (f"Philosopher's stone created using {lead_to_gold()}"
+            f"and {healing_potion()}")
+
+
+def elixir_of_life() -> str:
+    return ("Elixir of life: eternal youth achieved!")

@@ -3,16 +3,20 @@
 # ************************************************************************* #
 #                                                                           #
 #                                                      :::      ::::::::    #
-#  __init__.py                                       :+:      :+:    :+:    #
+#  spellbook.py                                      :+:      :+:    :+:    #
 #                                                  +:+ +:+         +:+      #
 #  By: cehenrot <cehenrot@student.42.fr>         +#+  +:+       +#+         #
 #                                              +#+#+#+#+#+   +#+            #
-#  Created: 2026/03/18 10:42:11 by cehenrot        #+#    #+#               #
-#  Updated: 2026/03/19 11:26:35 by cehenrot        ###   ########.fr        #
+#  Created: 2026/03/19 13:04:34 by cehenrot        #+#    #+#               #
+#  Updated: 2026/03/19 14:59:10 by cehenrot        ###   ########.fr        #
 #                                                                           #
 # ************************************************************************* #
 
-from .basic import lead_to_gold, stone_to_gem
-from .advanced import philosophers_stone, elixir_of_life
+from .validator import validate_ingredients
 
-__all__ = [lead_to_gold, stone_to_gem, philosophers_stone, elixir_of_life]
+
+def record_spell(spell_name: str, ingredients: str) -> str:
+    if "VALID" in validate_ingredients(ingredients):
+        return (f"Spell recorded: {spell_name} {ingredients}")
+    else:
+        return (f"Spell rejected: {spell_name} {ingredients}")

@@ -3,16 +3,17 @@
 # ************************************************************************* #
 #                                                                           #
 #                                                      :::      ::::::::    #
-#  __init__.py                                       :+:      :+:    :+:    #
+#  validator.py                                      :+:      :+:    :+:    #
 #                                                  +:+ +:+         +:+      #
 #  By: cehenrot <cehenrot@student.42.fr>         +#+  +:+       +#+         #
 #                                              +#+#+#+#+#+   +#+            #
-#  Created: 2026/03/18 10:42:11 by cehenrot        #+#    #+#               #
-#  Updated: 2026/03/19 11:26:35 by cehenrot        ###   ########.fr        #
+#  Created: 2026/03/19 13:05:37 by cehenrot        #+#    #+#               #
+#  Updated: 2026/03/19 14:01:31 by cehenrot        ###   ########.fr        #
 #                                                                           #
 # ************************************************************************* #
 
-from .basic import lead_to_gold, stone_to_gem
-from .advanced import philosophers_stone, elixir_of_life
-
-__all__ = [lead_to_gold, stone_to_gem, philosophers_stone, elixir_of_life]
+def validate_ingredients(ingredients: str) -> str:
+    for i in ["air", "earth", "water", "fire"]:
+        if i in ingredients:
+            return (f"{ingredients} - VALID")
+    return (f"{ingredients} - INVALID")

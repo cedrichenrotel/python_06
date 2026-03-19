@@ -3,16 +3,21 @@
 # ************************************************************************* #
 #                                                                           #
 #                                                      :::      ::::::::    #
-#  __init__.py                                       :+:      :+:    :+:    #
+#  basic.py                                          :+:      :+:    :+:    #
 #                                                  +:+ +:+         +:+      #
 #  By: cehenrot <cehenrot@student.42.fr>         +#+  +:+       +#+         #
 #                                              +#+#+#+#+#+   +#+            #
-#  Created: 2026/03/18 10:42:11 by cehenrot        #+#    #+#               #
-#  Updated: 2026/03/19 11:26:35 by cehenrot        ###   ########.fr        #
+#  Created: 2026/03/19 10:02:13 by cehenrot        #+#    #+#               #
+#  Updated: 2026/03/19 11:38:02 by cehenrot        ###   ########.fr        #
 #                                                                           #
 # ************************************************************************* #
 
-from .basic import lead_to_gold, stone_to_gem
-from .advanced import philosophers_stone, elixir_of_life
+from alchemy.elements import create_fire, create_earth
 
-__all__ = [lead_to_gold, stone_to_gem, philosophers_stone, elixir_of_life]
+
+def lead_to_gold() -> str:
+    return (f"Lead transmuted to gold using {create_fire()}")
+
+
+def stone_to_gem() -> str:
+    return (f"Stone transmuted to gem using {create_earth()}")
