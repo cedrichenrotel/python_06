@@ -5,10 +5,10 @@
 #                                                      :::      ::::::::    #
 #  advanced.py                                       :+:      :+:    :+:    #
 #                                                  +:+ +:+         +:+      #
-#  By: cehenrot <cehenrot@student.42.fr>         +#+  +:+       +#+         #
+#  By: cehenrot <cehenrot@student.42lyon.fr>     +#+  +:+       +#+         #
 #                                              +#+#+#+#+#+   +#+            #
 #  Created: 2026/03/19 10:03:15 by cehenrot        #+#    #+#               #
-#  Updated: 2026/03/19 11:10:05 by cehenrot        ###   ########.fr        #
+#  Updated: 2026/03/19 17:41:26 by cehenrot        ###   ########.fr        #
 #                                                                           #
 # ************************************************************************* #
 
@@ -17,7 +17,7 @@ from ..potions import healing_potion
 
 
 def philosophers_stone() -> str:
-    return (f"Philosopher's stone created using {lead_to_gold()}"
+    return (f"Philosopher's stone created using {lead_to_gold()} "
             f"and {healing_potion()}")
 
 

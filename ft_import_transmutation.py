@@ -5,10 +5,10 @@
 #                                                      :::      ::::::::    #
 #  ft_import_transmutation.py                        :+:      :+:    :+:    #
 #                                                  +:+ +:+         +:+      #
-#  By: cehenrot <cehenrot@student.42.fr>         +#+  +:+       +#+         #
+#  By: cehenrot <cehenrot@student.42lyon.fr>     +#+  +:+       +#+         #
 #                                              +#+#+#+#+#+   +#+            #
 #  Created: 2026/03/19 07:26:40 by cehenrot        #+#    #+#               #
-#  Updated: 2026/03/19 09:40:44 by cehenrot        ###   ########.fr        #
+#  Updated: 2026/03/19 17:00:37 by cehenrot        ###   ########.fr        #
 #                                                                           #
 # ************************************************************************* #
 
@@ -33,6 +33,7 @@ def main() -> None:
     print("\nMethod 4 - Multiple imports:")
     print(f"create_earth(): {create_earth()}\ncreate_fire(): {create_fire()}")
     print(f"strength_potion(): {strength_potion()}")
+    print("\nAll import transmutation methods mastered")
 
 
 if __name__ == "__main__":

@@ -8,7 +8,7 @@
 #  By: cehenrot <cehenrot@student.42lyon.fr>     +#+  +:+       +#+         #
 #                                              +#+#+#+#+#+   +#+            #
 #  Created: 2026/03/18 10:29:18 by cehenrot        #+#    #+#               #
-#  Updated: 2026/03/18 18:32:43 by cehenrot        ###   ########.fr        #
+#  Updated: 2026/03/19 17:35:34 by cehenrot        ###   ########.fr        #
 #                                                                           #
 # ************************************************************************* #
 
@@ -24,7 +24,7 @@ def create_water() -> str:
 
 
 def create_earth() -> str:
-    e = 'Eart'
+    e = 'Earth'
     return (f"{e} element created")
 
 
