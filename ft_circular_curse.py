@@ -5,10 +5,10 @@
 #                                                      :::      ::::::::    #
 #  ft_circular_curse.py                              :+:      :+:    :+:    #
 #                                                  +:+ +:+         +:+      #
-#  By: cehenrot <cehenrot@student.42.fr>         +#+  +:+       +#+         #
+#  By: cehenrot <cehenrot@student.42lyon.fr>     +#+  +:+       +#+         #
 #                                              +#+#+#+#+#+   +#+            #
 #  Created: 2026/03/19 13:03:34 by cehenrot        #+#    #+#               #
-#  Updated: 2026/03/19 15:07:44 by cehenrot        ###   ########.fr        #
+#  Updated: 2026/03/19 16:38:27 by cehenrot        ###   ########.fr        #
 #                                                                           #
 # ************************************************************************* #
 
@@ -26,13 +26,13 @@ def main() -> None:
 
     print("\nTesting spell recording with validation:")
     print(f'record_spell("Fireball", "fire air"): '
-          f'{record_spell("Fireball", validate_ingredients("fire air"))}')
+          f'{record_spell("Fireball", "fire air")}')
     print(f'record_spell("Dark Magic", "shadow"): '
-          f'{record_spell("Dark Magic", validate_ingredients("shadow"))}')
+          f'{record_spell("Dark Magic", "shadow")}')
 
     print("\nTesting late import technique:")
     print(f'record_spell("Lightning", "air"): '
-          f'{record_spell("Lightning", validate_ingredients("air"))}')
+          f'{record_spell("Lightning", "air")}')
 
     print('\nCircular dependency curse avoided using late imports!\n'
           'All spells processed safely!')
