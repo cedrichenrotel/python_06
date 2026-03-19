@@ -8,7 +8,7 @@
 #  By: cehenrot <cehenrot@student.42.fr>         +#+  +:+       +#+         #
 #                                              +#+#+#+#+#+   +#+            #
 #  Created: 2026/03/19 13:03:34 by cehenrot        #+#    #+#               #
-#  Updated: 2026/03/19 15:01:35 by cehenrot        ###   ########.fr        #
+#  Updated: 2026/03/19 15:07:44 by cehenrot        ###   ########.fr        #
 #                                                                           #
 # ************************************************************************* #
 
@@ -30,9 +30,13 @@ def main() -> None:
     print(f'record_spell("Dark Magic", "shadow"): '
           f'{record_spell("Dark Magic", validate_ingredients("shadow"))}')
 
+    print("\nTesting late import technique:")
+    print(f'record_spell("Lightning", "air"): '
+          f'{record_spell("Lightning", validate_ingredients("air"))}')
+
+    print('\nCircular dependency curse avoided using late imports!\n'
+          'All spells processed safely!')
+
 
 if __name__ == "__main__":
     main()
-
-
-
