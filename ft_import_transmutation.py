@@ -8,7 +8,7 @@
 #  By: cehenrot <cehenrot@student.42lyon.fr>     +#+  +:+       +#+         #
 #                                              +#+#+#+#+#+   +#+            #
 #  Created: 2026/03/19 07:26:40 by cehenrot        #+#    #+#               #
-#  Updated: 2026/03/19 17:00:37 by cehenrot        ###   ########.fr        #
+#  Updated: 2026/03/19 17:57:27 by cehenrot        ###   ########.fr        #
 #                                                                           #
 # ************************************************************************* #
 
@@ -16,7 +16,7 @@ import alchemy.elements
 from alchemy.elements import create_water
 from alchemy.potions import healing_potion as heal
 from alchemy.elements import create_fire, create_earth
-from alchemy.potions import strength_potion
+from alchemy.potions import strength_potion, invisibility_potion
 
 
 def main() -> None:
@@ -33,6 +33,7 @@ def main() -> None:
     print("\nMethod 4 - Multiple imports:")
     print(f"create_earth(): {create_earth()}\ncreate_fire(): {create_fire()}")
     print(f"strength_potion(): {strength_potion()}")
+    print(f"invisibility_potion(): {invisibility_potion()}")
     print("\nAll import transmutation methods mastered")
 
 
