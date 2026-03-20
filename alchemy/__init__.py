@@ -5,10 +5,10 @@
 #                                                      :::      ::::::::    #
 #  __init__.py                                       :+:      :+:    :+:    #
 #                                                  +:+ +:+         +:+      #
-#  By: cehenrot <cehenrot@student.42lyon.fr>     +#+  +:+       +#+         #
+#  By: cehenrot <cehenrot@student.42.fr>         +#+  +:+       +#+         #
 #                                              +#+#+#+#+#+   +#+            #
 #  Created: 2026/03/18 10:32:08 by cehenrot        #+#    #+#               #
-#  Updated: 2026/03/18 18:30:34 by cehenrot        ###   ########.fr        #
+#  Updated: 2026/03/20 07:10:08 by cehenrot        ###   ########.fr        #
 #                                                                           #
 # ************************************************************************* #
 
@@ -17,4 +17,4 @@ __author__ = "Master Pythonicus"
 
 from .elements import create_fire, create_water
 
-__all__ = [create_fire, create_water]
+__all__ = ["create_fire", "create_water"]
