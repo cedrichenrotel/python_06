@@ -8,18 +8,19 @@
 #  By: cehenrot <cehenrot@student.42.fr>         +#+  +:+       +#+         #
 #                                              +#+#+#+#+#+   +#+            #
 #  Created: 2026/03/19 10:00:16 by cehenrot        #+#    #+#               #
-#  Updated: 2026/03/19 11:56:10 by cehenrot        ###   ########.fr        #
+#  Updated: 2026/03/20 07:51:03 by cehenrot        ###   ########.fr        #
 #                                                                           #
 # ************************************************************************* #
 
 import alchemy.transmutation
+from alchemy.transmutation import lead_to_gold, stone_to_gem
 
 
 def main() -> None:
     print("=== Pathway Debate Mastery ===")
     print("Testing Absolute Imports (basic.py):")
-    print(f"lead_to_gold(): {alchemy.transmutation.lead_to_gold()}")
-    print(f"stone_to_gem(): {alchemy.transmutation.stone_to_gem()}")
+    print(f"lead_to_gold(): {lead_to_gold()}")
+    print(f"stone_to_gem(): {stone_to_gem()}")
 
     print("\nTesting Relative Imports (from advanced.py):")
     print(f"philosophers_stone(): "
